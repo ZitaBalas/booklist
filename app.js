@@ -1,4 +1,3 @@
-/*global data*/
 const root = document.getElementById('root');
 const fields = ['name', 'author', 'image', 'plot'];
 let dynamicSection, books;
