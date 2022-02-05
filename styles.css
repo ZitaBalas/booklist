@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    width: fit-content;
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#list {
+    width: 20vw;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid mediumseagreen;
+}
+
+span {
+    width: 70%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+span:hover {
+    color: lightseagreen;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background-color: lightseagreen;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: darkseagreen;
+}
+
+.del-btn, #del-all-btn, .yes-btn {
+    background-color: #fd4646;
+}
+
+.edit-btn, .del-btn, #del-all-btn {
+    margin-left: 1rem;
+}
+
+#dynamic {
+    display: none;
+    height: fit-content;
+    width: 60%;
+    padding: 2rem;
+    padding-left: 4rem;
+    margin: 5rem 0;
+    margin-left: 5rem;
+    box-shadow: 0px 0px 15px #888888;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+img {
+    width: 30%;
+    margin: 2rem 0;
+    float: left;
+}
+
+.content-wrapper {
+    width: 65%;
+    float: right;
+    margin-right: 1%;
+}
+
+#close-btn {
+    width: auto;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    background: #fd4646;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 1rem;
+    position: sticky;
+    left: 100%;
+    bottom: 95%;
+    cursor: pointer;
+}
+
+form {
+    display: block;
+}
+
+input, label {
+    display: block;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 0.2rem;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0.2rem;
+}
+
+input {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.cancel-btn {
+    background: #fd4646;
+    margin: 2rem 0;
+    margin-right: 2rem;
+}
+
+#close-btn:hover, .cancel-btn:hover, .del-btn:hover, #del-all-btn:hover, .yes-btn:hover {
+    background: tomato;
+}
+
+#modal-menu {
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 15px #888888;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#modal-menu button {
+    margin: 0.5rem 1rem;
+}
