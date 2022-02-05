@@ -3,11 +3,6 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-    margin: 2rem;
-}
-
 #root {
     width: 100%;
     display: flex;
@@ -16,8 +11,7 @@ h1 {
 
 #container {
     width: fit-content;
-    margin: 0;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
     text-align: center;
     font-size: 1.2rem;
 }
