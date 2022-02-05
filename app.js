@@ -3,18 +3,6 @@ const root = document.getElementById('root');
 const fields = ['name', 'author', 'image', 'plot'];
 let dynamicSection, books;
 
-/* const saveData = obj => {
-    if (typeof Storage !== 'undefined') {
-
-        for (let i = 0; i < obj.length; i++) {
-            const elem = JSON.stringify(obj[i]);
-            if (!localStorage.getItem(`${i}`)) {
-                localStorage.setItem(`${i}`, elem);
-            }
-        }
-    }
-}; */
-
 const getData = () => {
     for (let i = 0; i < localStorage.length; i++) {
         const book = JSON.parse(localStorage.getItem(i));
@@ -24,7 +12,6 @@ const getData = () => {
 
 const init = () => {
     books = [];
-    //saveData(data);
     getData();
     const listSection = document.createElement('section');
     listSection.id = 'container';
